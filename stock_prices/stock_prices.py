@@ -3,7 +3,18 @@
 import argparse
 
 def find_max_profit(prices):
-  pass
+  # Go through the list and find the smallest 
+  # This will be `current_min_price_so_far`
+  # Go through the list and find the largest
+  # If the smallest(5) comes before the largest(11)
+    # Subtract smallest(5) from largest(11) that will be max profit(6)
+
+  # If the largest(100) comes before the smallest(10)
+    #find the second largest(90).. that will be max you can make 
+    #Subtract largest(100) from second largest(90) this will be max profit (-10)
+
+
+  
 
 
 if __name__ == '__main__':
