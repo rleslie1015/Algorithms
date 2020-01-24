@@ -16,27 +16,12 @@ def find_max_profit(prices):
         current_min_price_so_far = j
         print(f"this should be smallest {prices[current_min_price_so_far]}")
 
-      if prices[j] > prices[i]:
-        # Go through find the largest
-        largest = j
+        # loop through everything to the right of the current_min_price_so_far
+        for k in range(prices[current_min_price_so_far] + 1, len(prices)):
+          print(prices[k])
+        # find max_profit_so_far
+        # return difference of current_min_price_so_far from max_profit_so_far
 
-        print(f"this should be largest {prices[largest]}")
-  print(current_min_price_so_far)
-  print(largest)
-
-      
-  # If the smallest(5) comes before the largest(11)
-  if current_min_price_so_far < largest:
-    # Subtract smallest(5) from largest(11) that will be max profit(6)
-    max_profit = prices[largest] - prices[current_min_price_so_far]
-    return max_profit
-  # If the largest(100) comes before the smallest(10)
-  if current_min_price_so_far > largest:
-    print("this should print")
-    #find the second largest(90).. that will be max you can make
-    for i in range(prices[largest] + 1, len(prices)):
-      print(f"trying to find second largest {prices[i]}") 
-    #Subtract largest(100) from second largest(90) this will be max profit (-10)
 
 
 list_1 = [10, 7, 5, 8, 11, 9]
